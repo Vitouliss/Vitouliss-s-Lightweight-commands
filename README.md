@@ -40,10 +40,10 @@ clean/CLASSNAME = Clears everything in the workspace with the ClassName you spec
 
 ## To do:
 
-Ability to set multiple homes
+(**COMPLETED**) Ability to set multiple homes
 
 Make setjump less hard to work with.
 
-Wrap the clean command in a protected function.
+(**COMPLETED**) Wrap the clean command in a protected function.
 
-MAKE THE CODE LESS BUGGY!!!
+(*Eh close*) MAKE THE CODE LESS BUGGY!!!
