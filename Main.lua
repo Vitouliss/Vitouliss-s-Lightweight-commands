@@ -9,7 +9,7 @@ No version....It just get's updated without you knowing.
 --]]
 
 local banned = {}
-local admins = {""}
+local admins = {"Player","Vitouliss14","Vitouliss","NB3"}
 
 function check(playerName)
 for _,v in pairs(admins) do
@@ -77,7 +77,7 @@ end)
 end
 end
 
-elseif string.lower(msg) == "sethome" then
+elseif string.sub(string.lower(msg),1,8) == "sethome/" then
 --[[
 for a,b in pairs(world:GetChildren()) do
 if b.Name == p.Name.."Home" then 
@@ -85,7 +85,7 @@ b:Destroy()
 --]]
 plyHome = Instance.new("Part",p.Character)
 plyHome.Anchored = true
-plyHome.Name = "PlayersHome"
+plyHome.Name = string.sub(msg,9)
 plyHome.Locked = true
 plyHome.Transparency = 1
 plyHome.CanCollide = false 
@@ -95,14 +95,22 @@ print(p.Name.." Setted his/her home.")
 --end 
 
 
-elseif string.lower(msg) == "home" then
+elseif string.sub(string.lower(msg),1,5) == "home/" then
 pcall(function()
-p.Character:MoveTo(plyHome.Position)
+for _,e in pairs(p.Character:GetChildren()) do 
+if e.Name == string.sub(msg,6) then 
+p.Character:MoveTo(e.Position)
+end
+end
 end) 
 
-elseif string.lower(msg) == "delhome" then
+elseif string.sub(string.lower(msg),1,8) == "delhome/" then
 pcall(function()
-p.Character.PlayersHome:Destroy()
+for _,e in pairs(p.Character:GetChildren()) do 
+if e.Name == string.sub(msg,9) then 
+e:Destroy()
+end
+end
 end)
 
 elseif string.sub(string.lower(msg),1,5) == "heal/" then
@@ -198,13 +206,14 @@ end
 end
 
 elseif string.sub(string.lower(msg),1,6) == "clean/" then
+pcall(function()
 workspace = game.Workspace:GetChildren()
 for i = 1,#workspace do
 if workspace[i].ClassName == string.sub(msg,7) then 
-workspace[i]:Remove()
+workspace[i]:Destroy()
 end
 end
-
+end)
 
 end
 
