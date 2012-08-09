@@ -14,11 +14,11 @@ tpp/Coords = Teleports you to the specifiy coords (Currently crappy...Use it und
 
 kill/USERNAME = Kills a player.
 
-sethome = Set's your home 
+sethome/NAME = Set's your home with a name (For multiple homes)
 
-home = Go to the home you set. If you don't have one...It doesn't matter.
+home/NAME = Go to the home you set. If you don't have one...It doesn't matter.
 
-delhome = Delete the home you currently set. 
+delhome/NAME = Delete the home's with the name you specify. 
 
 heal/USERNAME = Heals the current player to MaxHealth. 
 
