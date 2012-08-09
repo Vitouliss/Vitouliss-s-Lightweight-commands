@@ -22,7 +22,7 @@ delhome = Delete the home you currently set.
 
 heal/USERNAME = Heals the current player to MaxHealth. 
 
-charid/NUMBER = 
+charid/NUMBER = Changes your characters to that of another person's id and then reset's your character.
 
 speed/NUMBER = Changes your WalkSpeed!
 
