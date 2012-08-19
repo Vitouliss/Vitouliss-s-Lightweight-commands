@@ -152,23 +152,18 @@ end
 end
 
 elseif string.sub(string.lower(msg),1,8) == "setjump/" then
-for _,v in pairs(game.Players:GetChildren()) do
-if v.Name:lower():match(string.sub(msg:lower(),9)) then
-pcall(function()
-if v.Character then 
-for _,v in pairs(v.Character:GetChildren()) do
+for _,v in pairs(p.Character.Torso:GetChildren()) do
 if v.ClassName == "BodyVelocity" then
 v:Destroy()
-local expl = Instance.new("BodyVelocity",v.Character.Torso)
-expl.maxForce = Vector3.new(4000,string.sub(msg,9),40000)
-expl.Velocity = Vector3.new(0,-90,0)
+else 
+
+local expl = Instance.new("BodyVelocity",p.Character.Torso)
+local yesdothis = tonumber(string.sub(msg,9))
+expl.maxForce = Vector3.new(4000,yesdothis,40000)
+expl.velocity = Vector3.new(0,-90,0)
 expl.Name = "OMG JUMP"
 end
-end
-end
-end)
-end
-end
+end 
 
 elseif string.lower(msg) == "listcommands" then
 local omgmes = Instance.new("Message",p.PlayerGui)
