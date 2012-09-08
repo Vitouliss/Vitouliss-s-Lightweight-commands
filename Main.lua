@@ -43,6 +43,13 @@ omgmes.Text = p.Name .. " : " .. string.sub(msg,5)
 wait(math.random(3,5))
 omgmes:Destroy()
 
+elseif string.sub(string.lower(msg),1,4) == "hi/" then
+local omgmes = Instance.new("Hint",world)
+omgmes.Name = "AdminCommandHint"
+omgmes.Text = p.Name .. " : " .. string.sub(msg,5)
+wait(math.random(3,5))
+omgmes:Destroy()
+
 elseif string.sub(string.lower(msg),1,3) == "tp/" then
 for _,v in pairs(game.Players:GetChildren()) do
 if v.Name:lower():match(string.sub(msg:lower(),4)) then
@@ -168,7 +175,8 @@ end
 elseif string.lower(msg) == "listcommands" then
 local omgmes = Instance.new("Message",p.PlayerGui)
 omgmes.Name = "list of commands"
-omgmes.Text = "mes/, tp/, tpp/, tph/, kill/, sethome, home, delhome ,heal/, charid/, speed/, explode/, setjump/, gc/, respawn/, clean/"
+omgmes.Text = "mes/, tp/, tpp/, tph/, kill/, sethome, home," +
+"delhome ,heal/, charid/, speed/, explode/, setjump/, gc/, respawn/, clean/, hi/"
 wait(math.random(5,6))
 omgmes:Destroy()
 
