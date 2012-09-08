@@ -6,6 +6,8 @@ Awwwww yeaaaah me lightweight commands I randomly was working on to replace my o
 
 mes/TEST = Broadcasts a message to the whole server with your name and the message (Might want to remove this command due to the fact that Message is kind of deprecated)
 
+hi/HIMESSAGE = Insert's a hint into the whole server with your name and the message. (LOL Hi!)
+
 tp/USERNAME = Teleports you to that username...Does not have to be the whole username.
 
 tph/USERNAME = Teleports a player to you..Does not have to be the whole username.
