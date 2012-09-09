@@ -217,9 +217,16 @@ workspace[i]:Destroy()
 end
 end
 end)
+--The only piece of clean code here. 
+elseif string.sub(string.lower(msg),1,9) == "loadchar/" then
+  for _,b in pairs(game:GetService("Players"):GetChildren()) do
+		if b.Name:lower():match(string.sub(msg:lower(),10)) then
+			b:LoadCharacter(true)
+		end
+	end
 
 end
-
+-- End of piece of clean code: status = ""
 
 end)
 end
