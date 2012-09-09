@@ -4,7 +4,7 @@ Vitouliss's Lightweight Commands...
 
 Randomly updated Randomly. 
 
-No version....It just get's updated without you knowing. 
+No version....It just get's updated without you knowing.
 
 --]]
 
