@@ -40,6 +40,8 @@ respawn/USERNAME = Parent's the player's character back to Workspace (Useful to 
 
 clean/CLASSNAME = Clears everything in the workspace with the ClassName you specify.
 
+loadchar/USERNAME = Restarts the guy's character. 
+
 ## To do:
 
 (**COMPLETED**) Ability to set multiple homes
