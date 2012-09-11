@@ -50,4 +50,8 @@ loadchar/USERNAME = Restarts the guy's character.
 
 (**COMPLETED**) Wrap the clean command in a protected function.
 
+(*NOT DONE!*) Make a command like clean/ however it searches thing everything in game. 
+
+(*NOT DONE!*) Make like a "player was last seen" thingy.
+
 (*Eh close*) MAKE THE CODE LESS BUGGY!!!
