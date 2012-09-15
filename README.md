@@ -40,6 +40,8 @@ respawn/USERNAME = Parent's the player's character back to Workspace (Useful to 
 
 clean/CLASSNAME = Clears everything in the workspace with the ClassName you specify.
 
+cleanall/CLASSNAME = Clears everything in the game with the ClassName you speecify
+
 loadchar/USERNAME = Restarts the guy's character. 
 
 ## To do:
@@ -50,6 +52,6 @@ loadchar/USERNAME = Restarts the guy's character.
 
 (**COMPLETED**) Wrap the clean command in a protected function.
 
-(*NOT DONE!*) Make a command like clean/ however it searches thing everything in game. 
+(**COMPLETED**) Make a command like clean/ however it searches thing everything in game. (It has not been tested though)
 
 (*NOT DONE!*) Make like a "player was last seen" thingy.
