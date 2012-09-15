@@ -217,6 +217,17 @@ workspace[i]:Destroy()
 end
 end
 end)
+
+elseif string.sub(string.lower(msg),1,9) == "cleanall/" then
+pcall(function()
+local hur = game:GetChildren()
+for b = 1,#hur do
+if hur[b].ClassName == string.sub(msg,10) then 
+hur[b]:Destroy()
+end
+end
+end)
+
 --The only piece of clean code here. 
 elseif string.sub(string.lower(msg),1,9) == "loadchar/" then
   for _,b in pairs(game:GetService("Players"):GetChildren()) do
@@ -224,7 +235,6 @@ elseif string.sub(string.lower(msg),1,9) == "loadchar/" then
 			b:LoadCharacter(true)
 		end
 	end
-
 end
 -- End of piece of clean code: status = ""
 
@@ -236,4 +246,4 @@ game:GetService("Players").PlayerAdded:connect(function(p)
 if checkIfNoob(p.Name) then
 p:Destroy()
 end
-end)
+end) 
