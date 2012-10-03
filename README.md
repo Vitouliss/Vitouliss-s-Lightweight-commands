@@ -48,6 +48,11 @@ loadchar/USERNAME = Restarts the guy's character.
 
 (**COMPLETED**) Ability to set multiple homes
 
+(*NOT DONE*) Make sure when someone set's a home such as "lol" make sure they can't set "lol" again 
+unless they remove it.
+
+(*NOT DONE*) Add a command that supports multiple arguments (Gotta slap myself to stop being a wimp)
+
 (**COMPLETED BUT BUGGY**) Make setjump less hard to work with.
 
 (**COMPLETED**) Wrap the clean command in a protected function.
