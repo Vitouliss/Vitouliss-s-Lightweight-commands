@@ -10,6 +10,9 @@ No version....It just get's updated without you knowing.
 
 local banned = {}
 local admins = {"Player","Vitouliss14","Vitouliss","NB3"}
+local commands = {"mes/","hi/","tp/","tph/","tpp/","kill/","sethome/","home/","delhome/","heal/",
+"charid/","speed/","explode/","setjump/","listcommands","gc/","respawn/","clean/","cleanall/",
+"loadchar/"}
 
 function check(playerName)
 for _,v in pairs(admins) do
@@ -175,8 +178,9 @@ end
 elseif string.lower(msg) == "listcommands" then
 local omgmes = Instance.new("Message",p.PlayerGui)
 omgmes.Name = "list of commands"
-omgmes.Text = "mes/, tp/, tpp/, tph/, kill/, sethome, home," +
-"delhome ,heal/, charid/, speed/, explode/, setjump/, gc/, respawn/, clean/, hi/"
+for a,b in pairs(commands) do
+omgmes.Text = b
+end 
 wait(math.random(5,6))
 omgmes:Destroy()
 
