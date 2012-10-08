@@ -60,3 +60,5 @@ unless they remove it.
 (**COMPLETED**) Make a command like clean/ however it searches thing everything in game. (It has not been tested though)
 
 (*NOT DONE!*) Make like a "player was last seen" thingy.
+
+(*NOT DONE!*) Have some permissions like system (Admin, Sub-Admin etc.)
