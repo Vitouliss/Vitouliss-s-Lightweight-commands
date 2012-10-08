@@ -61,4 +61,4 @@ unless they remove it.
 
 (*NOT DONE!*) Make like a "player was last seen" thingy.
 
-(*NOT DONE!*) Have some permissions like system (Admin, Sub-Admin etc.)
+(*NOT DONE!*) Have some permission like system (Admin, Sub-Admin etc.)
